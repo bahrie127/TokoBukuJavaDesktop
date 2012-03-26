@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/entity
+END
+Buku.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/TokoBuku/src/bahrie/tokobukuapp/entity/Buku.java
+END
+Kasir.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/entity/Kasir.java
+END
+Distributor.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/entity/Distributor.java
+END
+Pasok.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/entity/Pasok.java
+END
+Penjualan.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/entity/Penjualan.java
+END

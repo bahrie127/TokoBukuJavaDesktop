@@ -1,0 +1,83 @@
+10
+
+dir
+3
+https://bahrie127.googlecode.com/svn/trunk/TokoBuku/src/bahrie/tokobukuapp
+https://bahrie127.googlecode.com/svn
+
+
+
+2011-03-24T05:54:41.962995Z
+3
+bahrie172
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9e5cec24-8e28-7923-5aae-23657df83dfc
+
+sql
+dir
+
+koneksi
+dir
+
+interfaces
+dir
+
+Main.java
+file
+22
+
+
+
+2011-04-29T06:23:59.000000Z
+6cb86dcbe2bcee70457d642806bc001e
+2011-04-29T09:18:56.810878Z
+22
+bahrie172
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1505
+
+view
+dir
+
+implement
+dir
+
+report
+dir
+
+entity
+dir
+

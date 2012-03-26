@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/interfaces
+END
+InterPasok.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/interfaces/InterPasok.java
+END
+InterPenjualan.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/interfaces/InterPenjualan.java
+END
+InterBuku.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/interfaces/InterBuku.java
+END
+InterKasir.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/interfaces/InterKasir.java
+END
+InterDistributor.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3/trunk/TokoBuku/src/bahrie/tokobukuapp/interfaces/InterDistributor.java
+END

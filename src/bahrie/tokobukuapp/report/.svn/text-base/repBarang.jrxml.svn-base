@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="repBarang" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     buku.`id_buku` AS buku_id_buku,
+     buku.`judul` AS buku_judul,
+     buku.`noisbn` AS buku_noisbn,
+     buku.`penerbit` AS buku_penerbit,
+     buku.`stok` AS buku_stok,
+     buku.`harga_pokok` AS buku_harga_pokok,
+     buku.`harga_jual` AS buku_harga_jual
+FROM
+     `buku` buku]]>
+	</queryString>
+	<field name="buku_id_buku" class="java.lang.String"/>
+	<field name="buku_judul" class="java.lang.String"/>
+	<field name="buku_noisbn" class="java.lang.String"/>
+	<field name="buku_penerbit" class="java.lang.String"/>
+	<field name="buku_stok" class="java.lang.Integer"/>
+	<field name="buku_harga_pokok" class="java.lang.Double"/>
+	<field name="buku_harga_jual" class="java.lang.Double"/>
+	<group name="buku_penerbit">
+		<groupExpression><![CDATA[$F{buku_penerbit}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="59" splitType="Stretch">
+			<staticText>
+				<reportElement x="197" y="8" width="168" height="51"/>
+				<textElement>
+					<font size="30"/>
+				</textElement>
+				<text><![CDATA[Data Buku]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="22" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="0" width="56" height="20" forecolor="#1C1717" backcolor="#967E7E"/>
+				<textElement/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="0" width="61" height="20" backcolor="#C1B5B5"/>
+				<textElement/>
+				<text><![CDATA[no isbn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="0" width="99" height="20" backcolor="#979595"/>
+				<textElement/>
+				<text><![CDATA[Judul Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="218" y="0" width="89" height="20" backcolor="#C1B5B5"/>
+				<textElement/>
+				<text><![CDATA[Penerbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="0" width="87" height="20" backcolor="#C1B5B5"/>
+				<textElement/>
+				<text><![CDATA[Harga Pokok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="0" width="92" height="20" backcolor="#C1B5B5"/>
+				<textElement/>
+				<text><![CDATA[Harga Jual]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="0" width="69" height="20" backcolor="#C1B5B5"/>
+				<textElement/>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="24" width="551" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{buku_id_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="58" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{buku_judul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{buku_noisbn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{buku_penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{buku_harga_pokok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="394" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{buku_harga_jual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="0" width="69" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{buku_stok}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="24" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="23" splitType="Stretch"/>
+	</summary>
+</jasperReport>
